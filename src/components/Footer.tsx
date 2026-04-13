@@ -2,6 +2,7 @@ import { MapPin, Phone, Mail, ChevronRight, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { subscribeNewsletter } from '../api/contact';
+import logoImg from '../assets/logo.jpg';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -28,7 +29,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* About */}
           <div>
-            <img src="/src/assets/logo.jpg" alt="Asel Teknoloji" className="h-12 mb-6 object-contain bg-white rounded p-1" />
+            <img src={logoImg} alt="Asel Teknoloji" className="h-12 mb-6 object-contain bg-white rounded p-1" />
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Asel Teknoloji, güvenlik sistemleri ve yazılım alanlarında yenilikçi ve güvenilir çözümler sunan, müşteri memnuniyetini ön planda tutan bir teknoloji şirketidir.
             </p>
