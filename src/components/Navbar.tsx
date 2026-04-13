@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import logoImg from '../assets/logo.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +37,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src="/src/assets/logo.jpg" alt="Asel Teknoloji Logo" className="h-10 md:h-12 object-contain" />
+            <img src={logoImg} alt="Asel Teknoloji Logo" className="h-10 md:h-12 object-contain" />
           </Link>
 
           {/* Desktop Menu */}
