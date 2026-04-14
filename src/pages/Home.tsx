@@ -110,7 +110,7 @@ const Home = () => {
             </button>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[250px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-auto md:auto-rows-[250px]">
             {bentoServices.map((service, index) => (
               <motion.div 
                 key={service.id}
